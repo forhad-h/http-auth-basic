@@ -1,0 +1,10 @@
+# password protection for restricted.html
+
+<FilesMatch "restricted.html">
+AuthType Basic
+AuthName "Restricted file"
+AuthUserFile /mnt/Resources/www/http-auth-basic/.htpasswd
+Require valid-user
+</FilesMatch>
+
+
